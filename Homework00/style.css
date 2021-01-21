@@ -14,6 +14,12 @@
   font-style: italic;
 }
 
+#footer{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
 body {
   background-color: lightgrey;
 }
@@ -47,7 +53,7 @@ ol {
   font-size: small;
 }
 
-img {
+.img-music {
   width: 300px;
   height: 300px;
 }
