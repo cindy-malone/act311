@@ -1,5 +1,14 @@
 body {
   background-color: #f3d5d5;
+}
+
+.borderChanges {
+  border: 2px solid #020008;
+  border-collapse: collapse;
+  border-radius: 3px;
+}
+
+th, tr, td {
   border: 2px solid #020008;
   border-collapse: collapse;
   border-radius: 3px;
