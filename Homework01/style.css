@@ -12,6 +12,8 @@ th, tr, td {
   border: 2px solid #020008;
   border-collapse: collapse;
   border-radius: 3px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .Introduction {
