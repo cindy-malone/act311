@@ -1,3 +1,13 @@
-.my-carousel{
-    
+.carousel-font-background{
+    background-color: rgba(128,128,128, .7);
+    padding: 0px;
+}
+
+.carousel-font-color{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.background-color{
+    background-color: white;
 }
