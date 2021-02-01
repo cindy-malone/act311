@@ -9,5 +9,20 @@
 }
 
 .background-color{
-    background-color: white;
+    background-image: url(Pictures/Flag.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-color: #ffffff;
+
 }
+
+.central {
+    text-align: center;
+}
+
+.header-font-change{
+    font-style: italic;
+    font-family: monospace;
+}
+
