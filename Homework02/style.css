@@ -17,6 +17,11 @@
 
 }
 
+table, td, tr {
+    border: 1px solid green;
+    background-color: #ffffff;
+}
+
 .central {
     text-align: center;
 }
@@ -24,5 +29,9 @@
 .header-font-change{
     font-style: italic;
     font-family: monospace;
+}
+
+.background-grid-color{
+    background-color: rgba(128,128,128, .7);
 }
 
