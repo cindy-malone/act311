@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta char-set="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function changeBackground() {
+            document.body.style = "background-color: slategray;";
+        }
+
+        function backToNormal() {
+            document.body.style = "background-color: white;";
+        }
+
+        function coffeeBeans() {
+            document.getElementById("PictureDisplay").src = "Pictures/coffeeBeans.jpg";
+        }
+        function coffeeBrewing() {
+            document.getElementById("PictureDisplay").src = "Pictures/coffeeBrewing.jpg";
+        }
+
+        function coffee() {
+            document.getElementById("PictureDisplay").src = "Pictures/coffee.jpg";
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>I just wanted to test the H1 Tags!</h1>
+
+    <p>Push the button to change the background.</p>
+
+    <button type="button" onclick="changeBackground();">Let me see if this works</button>
+    <button type="Button" onclick="backToNormal();">This will make it go back to normal</button>
+
+    <p>Push these buttons if you want to change the images displayed.</p>
+    <img id="PictureDisplay" src="Pictures/coffeeBeans.jpg" alt="Coffee Bean" width="800" height="600">
+    <p>If you want to change the picture, pick the other button!</p>
+
+    <button type="button" onclick="coffeeBeans();">Coffee Beans</button>
+    <button type="button" onclick="coffeeBrewing();">Coffee Brewing!</button>
+    <button type="button" onclick="coffee();">Coffee Pictures!</button>
+
+    <p>This is the last portion.</p>
+    <p>This has to do with math!</p>
+
+</body>
+
+</html>
