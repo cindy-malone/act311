@@ -5,46 +5,39 @@
     <meta char-set="utf-8">
     <link rel="stylesheet" href="style.css">
     <script>
+        var result;
+
         function changeBackground() {
             document.body.style = "background-color: slategray;";
             document.getElementById("tester").style.color = "green";
             document.getElementById("h1").style.color = "green";
 
         }
-
         function backToNormal() {
             document.body.style = "background-color: white;";
             document.getElementById("tester").style.color = "black";
             document.getElementById("h1").style.color = "black";
         }
-
         function coffeeBeans() {
             document.getElementById("PictureDisplay").src = "Pictures/coffeeBeans.jpg";
         }
         function coffeeBrewing() {
             document.getElementById("PictureDisplay").src = "Pictures/coffeeBrewing.jpg";
         }
-
         function coffee() {
             document.getElementById("PictureDisplay").src = "Pictures/coffee.jpg";
         }
-
-        function getValue() {
-            var firstNum = document.getElementById("firstNumber");
-            var secondNum = document.getElementById("secondNumber");
-        }
-
         function calculating() {
-            var first = parseDouble(firstNum);
-            var second = parseDouble(secondNum);
-            return (first + second);
-        }
+            var first = document.getElementById("firstNumber").value;
+            var second = document.getElementById("secondNumber").value;
+            result = parseFloat(first) + parseFloat(second);
 
+            document.getElementById("answer").innerHTML = result;
+        }
     </script>
 </head>
 
 <body>
-    <div ></div>
     <h1 id="h1">I just wanted to test the H1 Tags!</h1>
     <p id="tester">Push the button to change the background.</p>
 
@@ -66,7 +59,12 @@
     <p>This has to do with math!</p>
 
     <form>
+        First Number: <input type="number" id="firstNumber" onchange="calculating()"><br>
+        Last name: <input type="number" id="secondNumber" onchange="calculating()"><br><br>
 
+        <p>The result is: </p>
+        <span id="answer" class="playing-FontColor" onchange="calculating()">
+        </span>
     </form>
 
 
